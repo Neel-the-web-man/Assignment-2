@@ -73,7 +73,8 @@ function windiv() {
         b.style.alignItems = "center";
         b.style.flexDirection = "column";
         countofclicks = 0;
-    }
+        let time_out=setTimeout(newGame,5000);
+        }
 }
 function tie() {
     let b = document.querySelector(".winner");
@@ -90,6 +91,7 @@ function tie() {
     b.style.alignItems = "center";
     b.style.flexDirection = "column";
     countofclicks = 0;
+    let time_out=setTimeout(newGame,5000);
 }
 for (let i = 0; i < nodeList.length; i++) {
     nodeList[i].addEventListener("click", () => {
