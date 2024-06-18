@@ -28,7 +28,14 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
+    cursor:pointer;
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+    }
+.navlinks li:hover{
+    background-color: rgb(48, 210, 255);
+    }
 
 main {
     background-color: rgb(255, 106, 106);
