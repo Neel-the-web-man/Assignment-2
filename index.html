@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img id="logo" src="logo.jpeg" alt="logo">
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li onclick="leaderboard()">
+                        Leaderboard
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="whos-turn"></div>
+        <div class="reset-warning"></div>
+        <button class="newGame reset_button" onclick="newGameReset()">Reset</button>
+        <button id="stop_reset" onclick="stop_reset()">Stop</button>
+        <div class="grid">
+        </div>
+        <div class="winner-opac">
+        </div>
+        <div class="winner-container">
+            <div class="winner"></div>
+        <button class="newGame" onclick="newGame()">New game</button>
+        </div>
+        <div class="leaderboard">
+            <div>
+                <div class="leaderboard-content">
+                </div>
+            <button id="leaderboard-button" onclick="leaderboard_button()">Back</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

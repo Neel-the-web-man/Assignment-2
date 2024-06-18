@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    background-color: rgb(43, 186, 226);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 80px;
+}
+
+#logo {
+    height: 84px;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks li {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+main {
+    background-color: rgb(255, 106, 106);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.whos-turn {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    background-color: rgb(255, 123, 123);
+    height: 600px;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.box {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+}
+
+.winner-opac {
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: none;
+    color: white;
+}
+
+.winner-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    max-width: 100%;
+    display: none;
+    color: white;
+    font-size: 35px;
+    row-gap: 20px;
+}
+
+.newGame {
+    color: white;
+    z-index: 1;
+    background-color: rgb(0, 202, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    letter-spacing: 1.3px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.newGame:hover {
+    background-color: rgb(0, 224, 0);
+}
+
+.leaderboard {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: none;
+    color: white;
+    font-size: 35px;
+}
+
+.leaderboard div {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leaderboard button {
+    color: white;
+    z-index: 1;
+    background-color: rgb(0, 202, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    letter-spacing: 1.3px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.leaderboard button:hover {
+    background-color: rgb(0, 224, 0);
+}
+
+#stop_reset {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 7px;
+    letter-spacing: 1.3px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+}
+
+.reset-warning {
+    color: white;
+    font-size: 20px;
+}
+
+.lead {
+    color: rgb(88, 88, 255);
+}
+
+.reset_button {
+    z-index: 0;
+}
+
+@media only screen and (max-width:615px) {
+    .grid {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:505px) {
+    .grid {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:405px) {
+    .grid {
+        width: 300px;
+        height: 300px;
+    }
+    .box{
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width:318px) {
+    .grid {
+        width: 250px;
+        height: 250px;
+    }
+    .leaderboard {
+        font-size: 25px;
+    }
+
+    .leaderboard button {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    .winner-container{
+        font-size: 18px;
+    }
+}
